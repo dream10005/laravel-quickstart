@@ -22,5 +22,11 @@ Route::group(['middleware' => ['web']], function () {
     Route::delete('/task/{task}', 'TaskController@destroy');
 
     Route::auth();
+    
+    Route::get('/react', function()
+	{
+	return view('react');
+	});
+
 
 });
