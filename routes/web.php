@@ -28,5 +28,9 @@ Route::group(['middleware' => ['web']], function () {
 	return view('react');
 	});
 
+    Route::get('/flux', function()
+    {
+    return view('react');
+    });
 
 });

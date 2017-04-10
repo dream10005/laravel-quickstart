@@ -1,14 +1,13 @@
-// App.js
-import React, { Component } from 'react'
+import React from 'react';
+import { render } from 'react-dom';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import NewTask from './components/NewTask';
+import FluxApp from './components/FluxApp';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <header>Navbar</header>
-      </div>
-    )
-  }
-}
+render((
+	<Router history={browserHistory}>
+		<Route path='/react' component={NewTask}></Route>
+		<Route path='/flux' component={FluxApp}></Route>
+    </Router>
 
-export default App
+), document.getElementById('container'));
