@@ -33,4 +33,9 @@ Route::group(['middleware' => ['web']], function () {
     return view('react');
     });
 
+    Route::get('/rest', function()
+    {
+    return view('react');
+    });
+
 });

@@ -4,7 +4,7 @@ var DiscussionList = require('./DiscussionList.js');
 var DiscussionStore = require('./DiscussionStore.js');
 var DiscussionActions = require('./DiscussionActions.js');
 
-var DiscussionApp = React.createClass                                                                                                                                                                                                                                                                    // 4 methods ด้านล่างนี้เป็น pattern
+var DiscussionApp = React.createClass({                                                                                                                                                                                                                                                                   // 4 methods ด้านล่างนี้เป็น pattern
     getInitialState: function() {
         return DiscussionStore.getState();
     },
